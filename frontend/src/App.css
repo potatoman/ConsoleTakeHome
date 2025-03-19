@@ -1,0 +1,136 @@
+.wrapper {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.sidebar {
+  width: 45vw;
+  background: #2c3e50;
+  color: white;
+  padding: 20px;
+  height: 100vh;
+  overflow-y: auto;
+  position: relative;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.sidebar details {
+  margin-bottom: 10px;
+}
+
+.sidebar summary {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 8px;
+  border-radius: 5px;
+  background: #34495e;
+  transition: background 0.3s;
+}
+
+.sidebar summary:hover {
+  background: #1abc9c;
+}
+
+/* main content */
+.container {
+  flex-grow: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: auto;
+  height: 100vh;
+  width: 55vw;
+}
+
+/* form elements */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 300px;
+}
+
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between; 
+}
+
+label {
+  font-weight: bold;
+}
+
+input, select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* card styling */
+.card {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  background: white;
+  cursor: pointer;
+}
+
+/* buttons */
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.primary-btn {
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+}
+
+.primary-btn:hover {
+  background-color: #0056b3;
+}
+
+.secondary-btn {
+  background-color: #f39c12;
+  color: white;
+}
+
+.secondary-btn:hover {
+  background-color: #d68910;
+}
+
+.danger-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.danger-btn:hover {
+  background-color: #c0392b;
+}
+
+/* table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background: #007bff;
+  color: white;
+}
+

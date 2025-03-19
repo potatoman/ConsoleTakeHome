@@ -1,0 +1,4 @@
+node_modules/
+dist/
+pocketbase_0.26.1_darwin_arm64/
+.env

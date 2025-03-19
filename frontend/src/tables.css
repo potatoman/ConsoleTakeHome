@@ -1,0 +1,81 @@
+/* table container */
+.table-container {
+    overflow-y: auto;
+    max-height: 500px;
+    width: 95%;
+    margin-top: 20px;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(247, 104, 104, 0.1);
+  }
+  /* table layout */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* prevents columns from stretching too much */
+  }
+
+  td img {
+    max-width: 40px; /* keeps images small */
+    max-height: 40px;
+    border-radius: 4px;
+    display: block;
+    object-fit: contain;
+  }
+
+  th, td {
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 10px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  /* table headers */
+  th {
+    background: #3498db; /* softer blue */
+    color: black;
+    text-align: left;
+    padding: 12px;
+    font-weight: bold;
+  }
+  
+  /* table rows */
+  td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: black;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  
+  /* zebra striping for readability */
+  tr:nth-child(even) {
+    background: #f4f4f4;
+  }
+
+  tr:nth-child(odd) {
+    background: #ffffff;
+  }
+  
+  /* hover effect */
+  tr:hover {
+    background: #eaf1f8;
+  }
+  
+  /* fix image/logo column */
+  td img {
+    max-width: 40px;
+    height: auto;
+    border-radius: 4px;
+    display: block;
+  }
+  
